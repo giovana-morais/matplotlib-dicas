@@ -67,15 +67,15 @@
 \thispagestyle{empty}
 
 \section*{\LARGE \rmfamily
-          Matplotlib \textcolor{orange}{\mdseries for beginners}}
+          Matplotlib \textcolor{orange}{\mdseries para iniciantes}}
 
 \begin{multicols*}{3}
 
-Matplotlib is a library for making 2D and 3D plots in Python. It is designed
-with the philosophy that you should be able to create simple plots
-with just a few commands:\\
+Matplotlib é uma biblioteca para gerar plots em 2D e 3D em Python. Foi criada
+com a filosofia de que você deve ser capaz de criar plots simples com apenas
+alguns comandos:\\
 
-\fbox{1} \textbf{Initialize}
+\fbox{1} \textbf{Inicialize}
 \begin{lstlisting}
  import numpy as np
  import matplotlib.pyplot as plt
@@ -87,21 +87,21 @@ with just a few commands:\\
  Y = np.sin(X)
 \end{lstlisting}
 %
-\fbox{3} \textbf{Render}
+\fbox{3} \textbf{Renderize}
 \begin{lstlisting}
  fig, ax = plt.subplots()
  ax.plot(X, Y)
- plt.show()
+ fig.show()
 \end{lstlisting}
 %
 \fbox{4} \textbf{Observe} \medskip\\
 \includegraphics[width=\linewidth]{sine.pdf}
 
 % -----------------------------------------------------------------------------
-\subsection*{\rmfamily Choose}
+\subsection*{\rmfamily Escolha}
 % -----------------------------------------------------------------------------
 
-Matplotlib offers several kind of plots (see Gallery): \medskip
+Matplotlib oferece diversos tipos de plots (veja Galeria): \medskip
 
 \begin{tabular}{@{}m{.821\linewidth}m{.169\linewidth}}
 \begin{lstlisting}[belowskip=-\baselineskip]
@@ -177,11 +177,11 @@ Matplotlib offers several kind of plots (see Gallery): \medskip
 
 
 % -----------------------------------------------------------------------------
-\subsection*{\rmfamily Tweak}
+\subsection*{\rmfamily Modifique}
 % -----------------------------------------------------------------------------
-You can modify pretty much anything in a plot, including limits,
-colors, markers, line width and styles, ticks and ticks labels,
-titles, etc. \medskip
+Você pode modificar praticamente tudo em um plot, incluindo limites,
+cores, marcadores, grossura e estilo de linhas, ticks e rótulos de ticks,
+títulos, etc. \medskip
 
 % -----------------------------------------------------------------------------
 \begin{tabular}{@{}m{.821\linewidth}m{.169\linewidth}}
@@ -225,8 +225,8 @@ titles, etc. \medskip
 \subsection*{\rmfamily Organize}
 % -----------------------------------------------------------------------------
 
-You can plot several data on the the same figure, but you can also
-split a figure in several subplots (named {\em Axes}): \medskip
+Você pode plotar diferentes dados na mesma figura, mas você também
+pode dividir uma figura em diversos subplots (chamados {\em Axes}): \medskip
 
 % -----------------------------------------------------------------------------
 \begin{tabular}{@{}m{.821\linewidth}m{.169\linewidth}}
@@ -257,14 +257,14 @@ split a figure in several subplots (named {\em Axes}): \medskip
 \end{tabular}
 
 % -----------------------------------------------------------------------------
-\subsection*{\rmfamily Label \mdseries (everything)}
+\subsection*{\rmfamily Rotule \mdseries (tudo)}
 % -----------------------------------------------------------------------------
 % -----------------------------------------------------------------------------
 \begin{tabular}{@{}m{.821\linewidth}m{.169\linewidth}}
 \begin{lstlisting}[belowskip=-\baselineskip]
  ax.plot(X, Y)
  fig.suptitle(None)
- ax.set_title("A Sine wave")
+ ax.set_title("Uma senoide")
 \end{lstlisting}
 & \raisebox{-0.75em}{\includegraphics[width=\linewidth]{plot-title.pdf}}
 \end{tabular}
@@ -273,7 +273,7 @@ split a figure in several subplots (named {\em Axes}): \medskip
 \begin{lstlisting}[belowskip=-\baselineskip]
  ax.plot(X, Y)
  ax.set_ylabel(None)
- ax.set_xlabel("Time")
+ ax.set_xlabel("Tempo")
 \end{lstlisting}
 & \raisebox{-0.75em}{\includegraphics[width=\linewidth]{plot-xlabel.pdf}}
 \end{tabular}
@@ -282,16 +282,16 @@ split a figure in several subplots (named {\em Axes}): \medskip
 \subsection*{\rmfamily Explore}
 % -----------------------------------------------------------------------------
 
-Figures are shown with a graphical user interface that allows to zoom
-and pan the figure, to navigate between the different views and to
-show the value under the mouse.
+As figuras estão contidas em uma interface gráfica que permite manipulações como modificar o zoom
+e deslocar a figura, navegar entre diferentes visualizações e
+mostrar o valor selecionado pelo mouse.
 
 % -----------------------------------------------------------------------------
-\subsection*{\rmfamily Save \mdseries (bitmap or vector format)}
+\subsection*{\rmfamily Salve \mdseries (bitmap ou vetor)}
 % -----------------------------------------------------------------------------
 \begin{lstlisting}[belowskip=-\baselineskip]
- fig.savefig("my-first-figure.png", dpi=300)
- fig.savefig("my-first-figure.pdf")
+ fig.savefig("minha-primeira-figura.png", dpi=300)
+ fig.savefig("minha-primeira-figura.pdf")
 \end{lstlisting}
 %
 \vfill

@@ -158,34 +158,34 @@
 
 \newcommand{\paramx}[1]{%
   \pdftooltip{\parameter{#1}{X}}
-  {Horizontal coordinates of data point. 1D array like or scalar. }
+  {Coordenadas horizontais de um ponto. Um escalar ou array 1D. }
 }
 
 \newcommand{\paramy}[1]{%
   \pdftooltip{\parameter{#1}{Y}}%
-  {Vertical coordinates of data point. 1D array like or scalar. }
+  {Coordenadas verticais de um ponto. Um escalar ou array 1D. }
 }
 
 \newcommand{\paramfmt}[1]{%
   \pdftooltip{\parameter{#1}{fmt}}%
-  {A format string, e.g. 'ro' for red circles. Format strings are just
-   an abbreviation for quickly setting basic line properties. All of
-   these and more can also be controlled by keyword arguments.}
+  {Uma format string, ex. 'ro' para círculos vermelhos. Format strings são
+  apenas abreviações para definir propriedades básicas da linha. Tudo isso e
+  mais também pode ser controlado por argumentos nomeados.}
 }
 
 \newcommand{\paramcolor}[1]{%
   \pdftooltip{\parameter{#1}{color}}%
-  {Set line color.}
+  {Define a cor da linha.}
 }
 
 \newcommand{\parammarker}[1]{%
   \pdftooltip{\parameter{#1}{marker}}%
-  {Set marker style.}
+  {Define estilo do marcador.}
 }
 
 \newcommand{\paramlinestyle}[1]{%
   \pdftooltip{\parameter{#1}{linestyle}}%
-  {Set line style.}
+  {Define estilo da linha.}
 }
 
 
@@ -203,9 +203,10 @@
 \newcommand{\origin}{\pdftooltip{origin}{'upper', 'lower'}}
 
 % --- Parameter: z
-\newcommand{\Z}{\pdftooltip{z}{(M,N): an image with scalar data. The values are mappedto colors using normalization and a colormap.\textCR
-(M, N, 3): an image with RGB values (0-1 float or 0-255 int)\textCR
-(M, N, 4): an image with RGBA values (0-1 float or 0-255 int)}}
+\newcommand{\Z}{\pdftooltip{z}{(M,N): uma imagem com dados escalares. Os valores
+		são mapeados para cores usando normalização e um mapa de cores.\textCR
+(M, N, 3): uma imagem com valores RGB (0-1 float ou 0-255 int)\textCR
+(M, N, 4): uma imagem com valores RGBA (0-1 float ou 0-255 int)}}
 
 % --- Parameter: cmap
 \newcommand{\cmap}{\pdftooltip{cmap}{
@@ -274,7 +275,7 @@
   %\vspace{\fill}
 
   % --- Quick start -----------------------------------------------------------
-  \begin{myboxed}{Quick start \hfill
+  \begin{myboxed}{Início rápido \hfill
       \API{https://matplotlib.org/tutorials/introductory/pyplot.html}}
   {\ttfamily \scriptsize
   import numpy as np\\
@@ -289,17 +290,17 @@
   ax.plot(X, Y, color='green')\\
   \\
   fig.savefig(``figure.pdf'')\\
-  plt.show() }
+  fig.show() }
   \end{myboxed}
   \vspace{\fill}
 
   % --- Figure anatomy --------------------------------------------------------
-  \begin{myboxed}{Anatomy of a figure}
+  \begin{myboxed}{Anatomia de uma figure}
   \includegraphics[width=\columnwidth]{anatomy.pdf}
   \end{myboxed}
   \vspace{\fill}
   % --- Layout ---------------------------------------------------------------
-  \begin{myboxed}{Subplots layout \hfill
+  \begin{myboxed}{Layout de subplots \hfill
       \API{https://matplotlib.org/tutorials/intermediate/gridspec.html} }
   \plot{layout-subplot.pdf}{\textbf{subplot[s]}(rows,cols,…)}
        {https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html}
@@ -318,7 +319,7 @@
   \vspace{\fill}
 
   % --- Getting help ----------------------------------------------------------
-  \begin{myboxed}{Getting help}
+  \begin{myboxed}{Conseguindo ajuda}
     \href{https://matplotlib.org}
          {\faIcon{globe}\,matplotlib.org}\\
     \href{https://github.com/matplotlib/matplotlib/issues}
@@ -337,7 +338,7 @@
 
 
   % --- Basic plots -----------------------------------------------------------
-  \begin{myboxed}{Basic plots}
+  \begin{myboxed}{Plots básicos}
   \plot{basic-plot.pdf}{\textbf{plot}([X],Y,[fmt],…)}
        {https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html}
        {\optional{X},
@@ -431,7 +432,7 @@
   \end{myboxed}
   \vspace{\fill}
   % --- Advanced plots --------------------------------------------------------
-  \begin{myboxed}{Advanced plots}
+  \begin{myboxed}{Plots avançados}
   \plot{advanced-step.pdf}{\textbf{step}(X,Y,[fmt],…)}
      {https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.step.html}
      {\mandatory{X},
@@ -501,7 +502,7 @@
 
 
   % --- Scale ---------------------------------------------------------------
-  \begin{myboxed}{Scales \hfill
+  \begin{myboxed}{Escalas \hfill
     \API{https://matplotlib.org/stable/api/scale_api.html}}
   {\ttfamily ax.\textbf{set\_[xy]scale}(scale,…)}
   \smallskip
@@ -514,7 +515,7 @@
   \vspace{\fill}
   %
   % --- Projections -----------------------------------------------------------
-  \begin{myboxed}{Projections \hfill
+  \begin{myboxed}{Projeções \hfill
       \API{https://matplotlib.org/stable/api/projections_api.html}}
   {\ttfamily \textbf{subplot}(…,projection=p)}
   \smallskip
@@ -530,7 +531,7 @@
   \vspace{\fill}
   %
   % --- Linestyles ---------------------------------------------------------------
-  \begin{myboxed}{Lines \hfill
+  \begin{myboxed}{Linhas \hfill
       \API{https://matplotlib.org/gallery/lines_bars_and_markers/linestyles.html}}
   \includegraphics[width=\columnwidth]{linestyles.pdf}
   \end{myboxed}
@@ -546,7 +547,7 @@
   \vspace{\fill}
   %
   % --- Colors ---------------------------------------------------------------
-  \begin{myboxed}{Colors \hfill
+  \begin{myboxed}{Cores \hfill
       \API{https://matplotlib.org/tutorials/colors/colors.html}}
     %  mpl.colors.to\_rbga(\textbf{color})\smallskip\\
     \def\arraystretch{0.5}
@@ -565,7 +566,7 @@
 
 
   % --- Colormaps -------------------------------------------------------------
-  \begin{myboxed}{Colormaps \hfill
+  \begin{myboxed}{Mapas de cores \hfill
       \API{https://matplotlib.org/tutorials/colors/colormaps.html}}
     {\ttfamily plt.\textbf{get\_cmap}(name) \smallskip\\}
     \def\arraystretch{0.5}
@@ -588,7 +589,7 @@
   \end{myboxed}
 
   % --- Ticks locators --------------------------------------------------------
-  \begin{myboxed}{Tick locators \hfill
+  \begin{myboxed}{Localizações de ticks\hfill
     \API{https://matplotlib.org/stable/api/ticker_api.html}}
     {\tiny \ttfamily
       from matplotlib import ticker\\
@@ -600,7 +601,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Tick formatters \hfill
+  \begin{myboxed}{Formatadores de ticks\hfill
     \API{https://matplotlib.org/stable/api/ticker_api.html}}
     {\tiny \ttfamily
       from matplotlib import ticker\\
@@ -612,7 +613,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Ornaments}
+  \begin{myboxed}{Ornamentos}
     {\ttfamily ax.\textbf{legend}(…) \hfill
     \api{https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html}}\\
      handles, labels, loc, title, frameon\smallskip\\
@@ -655,7 +656,7 @@
   %
   % \vspace{\fill}
   %
-  \begin{myboxed}{Animation \hfill
+  \begin{myboxed}{Animação \hfill
       \API{https://matplotlib.org/stable/api/animation_api.html}}
   {\ttfamily \scriptsize
   import matplotlib.animation as mpla\par
@@ -673,7 +674,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Styles \hfill
+  \begin{myboxed}{Estilos \hfill
       \API{https://matplotlib.org/tutorials/introductory/customizing.html}}
     \setlength{\fboxsep}{0pt}%
     \setlength{\fboxrule}{.25pt}%
@@ -699,7 +700,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Quick reminder}
+  \begin{myboxed}{Lembrete rápido}
   {\ttfamily
     ax.\textbf{grid}()\\
     ax.\textbf{set\_[xy]lim}(vmin, vmax)\\
@@ -735,7 +736,7 @@
   %% %
   %% \vspace{\fill}
   %
-  \begin{myboxed}{Keyboard shortcuts \hfill
+  \begin{myboxed}{Atalhos de teclado\hfill
     \API{https://matplotlib.org/users/navigation_toolbar.html}}
     \def\arraystretch{1.25}
     \begin{tabular}{ll}
@@ -752,23 +753,23 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Ten simple rules \hfill
+  \begin{myboxed}{Dez regras simples\hfill
       \READ{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833}}
-    1. Know your audience\\
-    2. Identify your message\\
-    3. Adapt the figure\\
-    4. Captions are not optional\\
-    5. Do not trust the defaults\\
-    6. Use color effectively\\
-    7. Do not mislead the reader\\
-    8. Avoid “chartjunk”\\
-    9. Message trumps beauty\\
-    10. Get the right tool
+    1. Conheça sua audiência\\
+    2. Identifique sua mensagem\\
+    3. Adapte a figura\\
+    4. Legendas não são opcionais\\
+    5. Não confie nos defaults\\
+    6. Use cores efetivamente\\
+    7. Não confunda o leitor\\
+    8. Evite “chartjunk”\\
+    9. Messagem supera beleza\\
+    10. Tenha a ferramenta correta
   \end{myboxed}
 \end{multicols*}
 
 \begin{multicols*}{5}
-  \begin{myboxed}{Axes adjustments\hfill
+  \begin{myboxed}{Ajustes nos eixos\hfill
       \API{https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots_adjust.html}}
     plt.\textbf{subplots\_adjust}( … )\\
 
@@ -786,7 +787,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Text alignments \hfill
+  \begin{myboxed}{Alinhamento de texto\hfill
       \API{https://matplotlib.org/tutorials/text/text_props.html} }
     ax.\textbf{text}( …, ha=… , va=…, …)\\
 
@@ -795,7 +796,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Text parameters  \hfill
+  \begin{myboxed}{Parâmetros de texto \hfill
       \API{https://matplotlib.org/tutorials/text/text_props.html}}
     ax.\textbf{text}(…, family=…, size=…, weight=…)\\
     ax.\textbf{text}(…, fontproperties=…)\\
@@ -804,7 +805,7 @@
   \end{myboxed}
 
 
-  \begin{myboxed}{Uniform colormaps}
+  \begin{myboxed}{Mapas de cor uniforme}
     \begin{tabular}{@{}p{0.7\columnwidth}p{0.25\columnwidth}@{}}
       \scriptsize \rule{0pt}{1.25em}\noindent
       \colormap{viridis}
@@ -817,7 +818,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Sequential colormaps}
+  \begin{myboxed}{Mapas de cor sequenciais}
     \begin{tabular}{@{}p{0.7\columnwidth}p{0.25\columnwidth}@{}}
       \scriptsize \rule{0pt}{1.25em}\noindent
       \colormap{Greys}
@@ -843,7 +844,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Diverging colormaps}
+  \begin{myboxed}{Mapas de cores divergentes}
     \begin{tabular}{@{}p{0.7\columnwidth}p{0.25\columnwidth}@{}}
       \scriptsize \rule{0pt}{1.25em}\noindent
       \colormap{PiYG}
@@ -863,7 +864,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Qualitative colormaps}
+  \begin{myboxed}{Mapas de cores qualitativos}
     \begin{tabular}{@{}p{0.7\columnwidth}p{0.25\columnwidth}@{}}
       \scriptsize \rule{0pt}{1.25em}\noindent
       \colormap{Pastel1}
@@ -883,7 +884,7 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Miscellaneous colormaps}
+  \begin{myboxed}{Mapas de cores diversos}
     \begin{tabular}{@{}p{0.7\columnwidth}p{0.25\columnwidth}@{}}
       \scriptsize \rule{0pt}{1.25em}\noindent
       \colormap{terrain}
@@ -896,14 +897,14 @@
 
 
 
-  \begin{myboxed}{Color names \hfill
+  \begin{myboxed}{Nomes de cores \hfill
       \API{https://matplotlib.org/stable/api/colors_api.html} }
     \includegraphics[width=\columnwidth]{colornames.pdf}
   \end{myboxed}
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Image interpolation
+  \begin{myboxed}{Interpolação de image
       \hfill \API{https://matplotlib.org/gallery/images_contours_and_fields/interpolation_methods.html} }
         \smallskip
 %%    plt.\textbf{imshow}(…, interpolation=…)\\
@@ -912,7 +913,7 @@
   \end{myboxed}
 
 
-  \begin{myboxed}{Legend placement}
+  \begin{myboxed}{Localização da legenda}
     \includegraphics[width=\columnwidth]{legend-placement.pdf}
     ax.\textbf{legend}(loc="string", bbox\_to\_anchor=(x,y))\\
     \begin{tabular}{@{}p{0.33\columnwidth}
@@ -938,14 +939,14 @@
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Annotation connection styles \hfill
+  \begin{myboxed}{Estilo de anotação de conexões \hfill
       \API{https://matplotlib.org/tutorials/text/annotations.html} }
     \includegraphics[width=\columnwidth]{annotation-connection-styles.pdf}
   \end{myboxed}
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Annotation arrow styles \hfill
+  \begin{myboxed}{Estilo de anotações de setas\hfill
       \API{https://matplotlib.org/tutorials/text/annotations.html} }
     \includegraphics[width=\columnwidth]{annotation-arrow-styles.pdf}
   \end{myboxed}
@@ -955,79 +956,79 @@
   %
 
   %
-  \begin{myboxed}{How do I …}
-    \textbf{… resize a figure?}\\
+  \begin{myboxed}{Como eu …}
+    \textbf{… redimensiono uma figura?}\\
     \hspace*{2.5mm}~$\rightarrow$ fig.set\_size\_inches(w, h)\\
-    \textbf{… save a figure?}\\
+    \textbf{… salvo uma figura?}\\
     \hspace*{2.5mm}~$\rightarrow$ fig.savefig("figure.pdf")\\
-    \textbf{… save a transparent figure?}\\
+    \textbf{… salve uma figura transparente?}\\
     \hspace*{2.5mm}~$\rightarrow$ fig.savefig("figure.pdf", transparent=True)\\
-    \textbf{… clear a figure/an axes?}\\
+    \textbf{… limpo uma figura/um eixo?}\\
     \hspace*{2.5mm}~$\rightarrow$ fig.clear() $\rightarrow$ ax.clear()\\
-    \textbf{… close all figures?}\\
+    \textbf{… fecho todas as figuras?}\\
     \hspace*{2.5mm}~$\rightarrow$ plt.close("all")\\
-    \textbf{… remove ticks?}\\
+    \textbf{… removo ticks?}\\
     \hspace*{2.5mm}~$\rightarrow$ ax.set\_[xy]ticks([])\\
-    \textbf{… remove tick labels ?}\\
+    \textbf{… removo rótulos de ticks?}\\
     \hspace*{2.5mm}~$\rightarrow$ ax.set\_[xy]ticklabels([])\\
-    \textbf{… rotate tick labels ?}\\
+    \textbf{… rotaciono rótulos de ticks?}\\
     \hspace*{2.5mm}~$\rightarrow$ ax.tick\_params(axis="x", rotation=90)\\
-    \textbf{… hide top spine?}\\
+    \textbf{… escondo top spine?}\\
     \hspace*{2.5mm}~$\rightarrow$ ax.spines['top'].set\_visible(False)\\
-    \textbf{… hide legend border?}\\
+    \textbf{… escondo borda da legenda?}\\
     \hspace*{2.5mm}~$\rightarrow$  ax.legend(frameon=False)\\
-    \textbf{… show error as shaded region?}\\
+    \textbf{… mostro erro como uma região sombreada?}\\
     \hspace*{2.5mm}~$\rightarrow$ ax.fill\_between(X, Y+error, Y-error)\\
-    \textbf{… draw a rectangle?}\\
+    \textbf{… desenho um retângulo?}\\
     \hspace*{2.5mm}~$\rightarrow$  ax.add\_patch(plt.Rectangle((0, 0), 1, 1)\\
-    \textbf{… draw a vertical line?}\\
+    \textbf{… desenho uma linha vertical?}\\
     \hspace*{2.5mm}~$\rightarrow$  ax.axvline(x=0.5)\\
-    \textbf{… draw outside frame?}\\
+    \textbf{… desenho fora do frame?}\\
     \hspace*{2.5mm}~$\rightarrow$  ax.plot(…, clip\_on=False)\\
-    \textbf{… use transparency?}\\
+    \textbf{… uso transparência?}\\
     \hspace*{2.5mm}~$\rightarrow$  ax.plot(…, alpha=0.25)\\
-    \textbf{… convert an RGB image into a gray image? }\\
+    \textbf{… converto uma imagem RGB em uma imagem cinza? }\\
     \hspace*{2.5mm}~$\rightarrow$  gray = 0.2989*R + 0.5870*G + 0.1140*B\\
-    \textbf{… set figure background color?}\\
+    \textbf{… defino uma cor de fundo para a figura?}\\
     \hspace*{2.5mm}~$\rightarrow$ fig.patch.set\_facecolor(``grey'')\\
-    \textbf{… get a reversed colormap?}\\
+    \textbf{… obtenho um mapa de cor reverso?}\\
     \hspace*{2.5mm}~$\rightarrow$ plt.get\_cmap(``viridis\_r'')\\
-    \textbf{… get a discrete colormap?}\\
+    \textbf{… obtenho um mapa de cor discreto?}\\
     \hspace*{2.5mm}~$\rightarrow$ plt.get\_cmap(``viridis'', 10)\\
-    \textbf{… show a figure for one second?}\\
+    \textbf{… mostro uma figura por um segundo?}\\
     \hspace*{2.5mm}~$\rightarrow$ fig.show(block=False), time.sleep(1)
   \end{myboxed}
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Performance tips}
+  \begin{myboxed}{Dicas de performance}
     \smallskip
     {\ttfamily \fontsize{6pt}{7pt}\selectfont
      %
-    \textcolor{red}{scatter(X, Y)  \hfill slow}\\
-    plot(X, Y, marker="o", ls="")  \hfill fast%
+    \textcolor{red}{scatter(X, Y)  \hfill devagar}\\
+    plot(X, Y, marker="o", ls="")  \hfill rápido%
     \vskip.5\baselineskip
     %
-    \textcolor{red}{for i in range(n): plot(X[i]) \hfill slow}\\
-    plot(sum([x+[None] for x in X],[])) \hfill fast%
+    \textcolor{red}{for i in range(n): plot(X[i]) \hfill devagar}\\
+    plot(sum([x+[None] for x in X],[])) \hfill rápido%
     \vskip.5\baselineskip
     %
-    \textcolor{red}{cla(), imshow(…), canvas.draw() \hfill slow}\\
-    im.set\_data(…), canvas.draw() \hfill fast%
+    \textcolor{red}{cla(), imshow(…), canvas.draw() \hfill devagar}\\
+    im.set\_data(…), canvas.draw() \hfill rápido%
     \vskip.1\baselineskip
     }
   \end{myboxed}
   %
   \vspace{\fill}
   %
-  \begin{myboxed}{Beyond Matplotlib}
+  \begin{myboxed}{Além do Matplotlib}
         \smallskip
-    \href{https://seaborn.pydata.org/}{\textbf{Seaborn}}: Statistical data visualization\\
-    \href{https://scitools.org.uk/cartopy/docs/latest/}{\textbf{Cartopy}}: Geospatial data processing\\
-    \href{https://yt-project.org/doc/index.html}{\textbf{yt}}: Volumetric data visualization\\
-    \href{https://mpld3.github.io}{\textbf{mpld3}}: Bringing Matplotlib to the browser\\
+    \href{https://seaborn.pydata.org/}{\textbf{Seaborn}}: Visualização de dado estatísticos\\
+    \href{https://scitools.org.uk/cartopy/docs/latest/}{\textbf{Cartopy}}: Processamento de dados geoespaciais\\
+    \href{https://yt-project.org/doc/index.html}{\textbf{yt}}: Visualização de dados volumétricos\\
+    \href{https://mpld3.github.io}{\textbf{mpld3}}: Trazendo Matplotlib para o navegador\\
     \href{https://datashader.org/}{\textbf{Datashader}}: Large data processing pipeline\\
-    \href{https://plotnine.readthedocs.io/en/latest/}{\textbf{plotnine}}: A grammar of graphics for Python
+    \href{https://plotnine.readthedocs.io/en/latest/}{\textbf{plotnine}}: Uma gramática de gráficos para Python
   \end{myboxed}
   %
   \begin{center}
