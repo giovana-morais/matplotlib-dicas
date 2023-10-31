@@ -31,32 +31,32 @@ figures:
 
 .PHONY: cheatsheets
 cheatsheets:
-	xelatex cheatsheets.tex
-	convert $(CONVERTFLAGS) cheatsheets.pdf -scene 1 cheatsheets.png
+	xelatex cheatsheets.pt-br.tex
+	convert $(CONVERTFLAGS) cheatsheets.pt-br.pdf -scene 1 cheatsheets.pt-br.png
 
 .PHONY: handouts
 handouts:
-	xelatex handout-beginner.tex
-	xelatex handout-intermediate.tex
-	xelatex handout-tips.tex
-	convert $(CONVERTFLAGS) handout-tips.pdf handout-tips.png
-	convert $(CONVERTFLAGS) handout-beginner.pdf handout-beginner.png
-	convert $(CONVERTFLAGS) handout-intermediate.pdf handout-intermediate.png
+	xelatex handout-beginner.pt-br.tex
+	xelatex handout-intermediate.pt-br.tex
+	xelatex handout-tips.pt-br.tex
+	convert $(CONVERTFLAGS) handout-tips.pt-br.pdf handout-tips.pt-br.png
+	convert $(CONVERTFLAGS) handout-beginner.pt-br.pdf handout-beginner.pt-br.png
+	convert $(CONVERTFLAGS) handout-intermediate.pt-br.pdf handout-intermediate.pt-br.png
 
 .PHONY: check
 check:
 	./check-matplotlib-version.py
-	./check-num-pages.sh cheatsheets.pdf 2
-	./check-num-pages.sh handout-tips.pdf 1
-	./check-num-pages.sh handout-beginner.pdf 1
-	./check-num-pages.sh handout-intermediate.pdf 1
+	./check-num-pages.sh cheatsheets.pt-br.pdf 2
+	./check-num-pages.sh handout-tips.pt-br.pdf 1
+	./check-num-pages.sh handout-beginner.pt-br.pdf 1
+	./check-num-pages.sh handout-intermediate.pt-br.pdf 1
 	./check-links.py cheatsheets.pdf
 
 .PHONY: docs
 docs:
 	make -C docs/ html
 	cp ./cheatsheets*.p* ./docs/_build/html
-	cp ./handout-*.p* ./docs/_build/html
+	cp ./handout-*.pt-br.p* ./docs/_build/html
 
 
 .PHONY: fonts
