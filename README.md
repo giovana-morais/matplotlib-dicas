@@ -16,7 +16,7 @@ Cheatsheet [(baixe o pdf)](https://giovana-morais.github.io/assets/cheatsheets.p
 
 Folheto iniciante [(download pdf)](https://giovana-morais.github.io/assets/handout-beginner.pt-br.pdf) | Folheto intermediário [(download pdf)](https://giovana-morais.github.io/assets/handout-intermediate.pt-br.pdf) | Folheto de dicas [(download pdf)](https://giovana-morais.github.io/assets/handout-tips.pt-br.pdf)
 :-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:
-![](https://giovana-morais.github.io/assets/handout-beginner.pt-br.png)                               | ![](https://giovana-morais.github.io/assets/handout-intermediate.pt-br.png)                                   | ![](https://giovana-morais.github.io/assets/handout-tips.pt-br.png)
+![](https://giovana-morais.github.io/assets/handout-beginner.pt-br.png)                               | ![](https://giovana-morais.github.io/assets/handout-intermediate.pt-br-0.png)                                   | ![](https://giovana-morais.github.io/assets/handout-tips.pt-br-0.png)
 
 # Para contribuidores das dicas
 
