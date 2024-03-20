@@ -8,15 +8,15 @@ não-oficial visa tornar as dicas mais acessíveis para pessoas que usam a Matpl
 Façam bom uso!
 
 ## Folhas de dicas
-Cheatsheet [(baixe o pdf)](https://matplotlib.org/cheatsheets/cheatsheets.pdf) | |
+Cheatsheet [(baixe o pdf)](https://giovana-morais.github.io/assets/cheatsheets.pt-br.pdf) | |
 :------------------------------------------------------------------------------:|:----------------------------------------------------------:
-![](https://matplotlib.org/cheatsheets/cheatsheets-1.png)                       | ![](https://matplotlib.org/cheatsheets/cheatsheets-2.png)
+![](https://giovana-morais.github.io/assets/cheatsheets.pt-br-1.png)                       | ![](https://giovana-morais.github.io/assets/cheatsheets.pt-br-2.png)
 
 ## Folhetos
 
-Folheto iniciante [(download pdf)](https://matplotlib.org/cheatsheets/handout-beginner.pdf) | Folheto intermediário [(download pdf)](https://matplotlib.org/cheatsheets/handout-intermediate.pdf) | Folheto de dicas [(download pdf)](https://matplotlib.org/cheatsheets/handout-tips.pdf)
+Folheto iniciante [(download pdf)](https://giovana-morais.github.io/assets/handout-beginner.pt-br.pdf) | Folheto intermediário [(download pdf)](https://giovana-morais.github.io/assets/handout-intermediate.pt-br.pdf) | Folheto de dicas [(download pdf)](https://giovana-morais.github.io/assets/handout-tips.pt-br.pdf)
 :-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:
-![](https://matplotlib.org/cheatsheets/handout-beginner.png)                               | ![](https://matplotlib.org/cheatsheets/handout-intermediate.png)                                   | ![](https://matplotlib.org/cheatsheets/handout-tips.png)
+![](https://giovana-morais.github.io/assets/handout-beginner.pt-br.png)                               | ![](https://giovana-morais.github.io/assets/handout-intermediate.pt-br.png)                                   | ![](https://giovana-morais.github.io/assets/handout-tips.pt-br.png)
 
 # Para contribuidores das dicas
 
